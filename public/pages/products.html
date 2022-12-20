@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bunny Shop</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <style>
+    body {
+        height: 100%;
+        background-color: blue;
+        text-align: center;
+        color: white;
+      }
+    .center {
+      position: absolute;
+      top: 8px;
+      right: 16px;
+      font-size: 18px;
+    }
+    .kartu {
+      margin-top: 20px;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .strike {
+      text-decoration: line-through;
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#">
+    <img src="../assets/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    Bunny Shop
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="center" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/products">Products</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/about">About</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+  <div class="d-flex justify-content-center kartu p-5">
+    <div class="card col-3 mx-4 bg-success border border-dark">
+      <img src="../assets/rtx.png" class="card-img-top" alt="450 x 300" style="min-height: 160px;">
+      <div class="card-body">
+        <h5 class="card-title">Special Item</h5>
+        <p class="card-text"><span class="strike">$999 </span>$799</p>
+        <a href="/special" class="btn btn-light border">More Info</a>
+      </div>
+    </div>
+    <div class="card col-3 mx-4 bg-success border border-dark">
+      <img src="../assets/logi.png" class="card-img-top" alt="450 x 300" style="min-height: 262px;">
+      <div class="card-body">
+        <h5 class="card-title">Popular Item</h5>
+        <p class="card-text">$199</p>
+        <a href="/popular" class="btn btn-light border">More Info</a>
+      </div>
+    </div>
+  </div>
+  <footer class="fixed-bottom py-2 bg-dark d-flex justify-content-around" style="width: 100%;">
+    <small>Copyright &copy; Bunny Web 2022</small>
+</footer>
+</body>
+</html>

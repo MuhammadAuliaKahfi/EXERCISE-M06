@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bunny Shop</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<style>
+    body {
+        height: 100%;
+        background-color: blue;
+        text-align: center;
+        color: white;
+        }
+    .center {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 18px;
+    }
+    .kartu {
+    margin-top: 20px;
+    text-align: center;
+    }
+    .strike {
+    text-decoration: line-through;
+    font-size: 20px;
+    }
+    .card-text {
+    font-size: 30px;
+    }
+    .rtx {
+    width: 25%;
+    }
+    .card-horizontal {
+    margin-bottom: -25px;
+    }
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">
+        <img src="../assets/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        Bunny Shop
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="center" id="navbarNav">
+        <ul class="navbar-nav">
+        <li class="nav-item active">
+            <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/products">Products</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+        </li>
+        </ul>
+    </div>
+    </nav>
+    <div class="d-flex justify-content-center kartu p-5">
+    <div class="card rtx bg-success border border-dark">
+        <div class="card-horizontal">
+            <div class="img-square-wrapper">
+                <img class="card-img-top" src="../assets/rtx.png" alt="Card image cap">
+            </div>
+            <div class="card-body">
+                <h4 class="card-title">GeForce RTX™ 4090 GAMING X TRIO 24G - MSI</h4>
+                <p class="card-text"><span class="strike">$999 </span>$799</p>
+            </div>
+        </div>
+        <div class="d-inline-flex p-3 justify-content-center">
+            <input type="number" class="input col-2 mx-2 border rounded" value="1" min="1">
+            <a href="#" class="btn btn-light col-auto border rounded"> Add to cart</a>
+        </div>
+        <div class="card-footer bg-dark text-light border border-dark">
+            <small>The NVIDIA® GeForce RTX™ 4090 is the ultimate GeForce GPU. It brings an enormous leap in performance, efficiency, and AI-powered graphics.</small>
+        </div>
+    </div>
+    </div>
+    <footer class="fixed-bottom py-2 bg-dark d-flex justify-content-around" style="width: 100%;">
+    <small>Copyright &copy; Bunny Web 2022</small>
+</footer>
+</body>
+</html>
